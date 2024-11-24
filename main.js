@@ -12,6 +12,8 @@ let maxLocation = numOfPapers + 1;
 
 let isAtBegining = true;
 
+let pageFlip = new Audio("page-flip.mp3");
+
 function openBook(){
     book.style.transform = "translateX(50%)";
     prevBtn.style.transform = "translateX(-17vw)";
@@ -33,6 +35,7 @@ function closeBook(isAtBegining){
 
 function goPrevPage(){
     if(currentLocation > 1){
+        pageFlip.play();
         switch(currentLocation){
             case 2:
                 closeBook(true);
@@ -59,6 +62,7 @@ function goPrevPage(){
 
 function goNextPage(){
     if(currentLocation < maxLocation){
+        pageFlip.play();
         switch(currentLocation){
             case 1:
                 paper1.classList.add("flipped");
