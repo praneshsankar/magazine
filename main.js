@@ -14,8 +14,8 @@ let isAtBegining = true;
 
 function openBook(){
     book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-200px)";
-    nextBtn.style.transform = "translateX(200px)";
+    prevBtn.style.transform = "translateX(-17vw)";
+    nextBtn.style.transform = "translateX(17vw)";
 }
 
 function closeBook(isAtBegining){
